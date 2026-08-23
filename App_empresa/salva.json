@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nome": "jhgiuh",
+        "largura": 1111.0,
+        "altura": 10.0,
+        "profudidade": 10.0,
+        "obs": "0-989-"
+    },
+    {
+        "id": 2,
+        "nome": "td",
+        "largura": 897.0,
+        "altura": 98.0,
+        "profudidade": 980.0,
+        "obs": "09809"
+    },
+    {
+        "id": 3,
+        "nome": "if 576576",
+        "largura": 8798.0,
+        "altura": 8789.0,
+        "profudidade": 222.0,
+        "obs": "22"
+    },
+    {
+        "id": 4,
+        "nome": "1",
+        "largura": 23233332.0,
+        "altura": 23232.0,
+        "profudidade": 3223.0,
+        "obs": "2323"
+    },
+    {
+        "id": 5,
+        "nome": "cistaleira",
+        "largura": 200.0,
+        "altura": 40.0,
+        "profudidade": 7896.0,
+        "obs": "tudo certo"
+    }
+]
