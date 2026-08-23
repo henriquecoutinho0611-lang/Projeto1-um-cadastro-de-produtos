@@ -64,5 +64,5 @@ while True:
 with open('salva.json', 'w') as arquivo:
  json.dump(salvar,arquivo, indent=4)
 
-print('-'*30 )
-print('produto salvo com sucesso ')
+print('-'*40 )
+print('produto salvo com sucesso')
