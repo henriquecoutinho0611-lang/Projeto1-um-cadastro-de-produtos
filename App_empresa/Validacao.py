@@ -26,13 +26,13 @@ def ler_numero(texto, minimo=0):
 
         return valor
 
-def ler_texto(texto)
+def ler_texto(texto):
     while True:
      resposta = str(input(texto)
-     if texto 
+     if resposta: 
       return resposta
      else:
-     print("Nome inválido")
-      continue
+      print("Nome inválido")
+       continue
      
      
