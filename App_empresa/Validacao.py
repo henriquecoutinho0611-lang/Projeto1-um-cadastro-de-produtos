@@ -4,9 +4,9 @@ def sim_nao(texto):
      resposta = input(texto).lower().strip()
 
      if resposta in ("n", "nao"):
-         return True
+         return False
      if resposta in ("s", "sim"):
-        return False
+        return True
 
      print("Opcao invalida")
      
