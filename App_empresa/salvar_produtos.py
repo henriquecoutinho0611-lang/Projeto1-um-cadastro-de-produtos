@@ -1,4 +1,5 @@
-from Validacao import ler_numero
+from Validacao import ler_numero, ler_texto
+
 
 
 def gerar_id(produtos):
@@ -10,7 +11,7 @@ def gerar_id(produtos):
 def Novo_produto (produtos):
     id_produto = gerar_id(produtos)
 
-    nome = input("Qual o nome da peca?\n")
+    nome = ler_texto("Qual o nome da peca?\n")
     print("-" * 30)
 
     largura = ler_numero("Informe a largura em mm: ")
