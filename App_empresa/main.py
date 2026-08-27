@@ -16,9 +16,9 @@ def cadasta_produto():
 def buscar():
 
       while True:
-       buscar = buscar_arquivo
+       buscar = buscar_arquivo()
        if buscar:
-            for produto in buscar_arquivo():
+            for produto in buscar:
              print("-" * 30)
              print(f"ID: {produto['id']}")
              print(f"Nome: {produto['nome']}")
