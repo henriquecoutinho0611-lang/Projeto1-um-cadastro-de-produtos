@@ -30,8 +30,9 @@ def ler_texto(texto)
     while True:
      resposta = str(input(texto)
      if texto 
-      return texto
+      return resposta
      else:
      print("Nome inválido")
+     continue
      
      
