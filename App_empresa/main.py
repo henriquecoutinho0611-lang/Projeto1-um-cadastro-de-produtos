@@ -10,7 +10,7 @@ def cadasta_produto():
             produtos = Novo_produto(produtos)
             salvar_arquivos(produtos)
 
-            if sim_nao("deseja cadasta mais algum produto?  "):
+            if not sim_nao("deseja cadasta mais algum produto?  "):
                break
 
 def buscar():
@@ -30,7 +30,7 @@ def buscar():
        else:
           print("Produto nao encontrado\n ")
 
-       if sim_nao("deseja busca mais algun produto? "):
+       if not sim_nao("deseja busca mais algun produto? "):
           break
 
                   
@@ -51,7 +51,7 @@ def main():
         print(" Opção inválida ")
 
      print("-"*30)   
-     if sim_nao(" Deseja continuar? "):
+     if not sim_nao(" Deseja continuar? "):
       break    
 
 if __name__ == "__main__": 
