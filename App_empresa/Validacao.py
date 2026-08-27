@@ -32,6 +32,6 @@ def ler_texto(texto)
      if texto 
       return texto
      else:
-     print("texto inválido")
+     print("Nome inválido")
      
      
