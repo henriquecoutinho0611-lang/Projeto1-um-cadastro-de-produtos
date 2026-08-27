@@ -28,7 +28,7 @@ def ler_numero(texto, minimo=0):
 
 def ler_texto(texto)
     while True:
-     texto = str(input(texto)
+     resposta = str(input(texto)
      if texto 
       return texto
      else:
