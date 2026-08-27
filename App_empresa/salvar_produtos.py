@@ -1,32 +1,4 @@
-from arquivos import ler_arquivo, salvar_arquivos
-
-
-
-def sair():
-    resposta = input("Deseja cadastrar outro produto? (s/n) ").lower().strip()
-
-    if resposta in ("n", "nao"):
-        return "nao"
-    if resposta in ("s", "sim"):
-        return "sim"
-
-    print("Opcao invalida")
-    return None
-
-
-def ler_numero(texto, minimo=0):
-    while True:
-        try:
-            valor = float(input(texto))
-        except ValueError:
-            print("Digite apenas numeros")
-            continue
-
-        if valor < minimo:
-            print("Numero invalido")
-            continue
-
-        return valor
+from Validacao import ler_numero
 
 
 def gerar_id(produtos):
@@ -63,18 +35,7 @@ def Novo_produto (produtos):
     }
 
     produtos.append(dados)
+
     return produtos
 
 
-def main():
-    while True:
-        produtos = ler_arquivo()
-        produtos = Novo_produto(produtos)
-        salvar_arquivos(produtos)
-
-        if sair() == "nao":
-            break
-
-
-if __name__ == "__main__":
-    main()

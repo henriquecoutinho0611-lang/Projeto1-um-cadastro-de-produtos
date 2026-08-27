@@ -14,4 +14,4 @@ def ler_arquivo():
 
 def salvar_arquivos(produtos):  
    with open(ARQUIVO, "w", encoding="utf8") as arquivo:
-      json.dump(produtos, arquivo, indent= 4, ensure_ascii=False)        
+      json.dump(produtos, arquivo, indent= 4, ensure_ascii=False)

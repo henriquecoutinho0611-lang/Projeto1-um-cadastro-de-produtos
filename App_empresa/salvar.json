@@ -6,5 +6,29 @@
         "altura": 756.0,
         "profudidade": 34.0,
         "obs": "N"
+    },
+    {
+        "id": 2,
+        "nome": "cistaleira",
+        "largura": 25.0,
+        "altura": 55.0,
+        "profudidade": 55.0,
+        "obs": "n"
+    },
+    {
+        "id": 3,
+        "nome": "cistaleira 2",
+        "largura": 33.0,
+        "altura": 39.0,
+        "profudidade": 44.0,
+        "obs": "n"
+    },
+    {
+        "id": 4,
+        "nome": "cista",
+        "largura": 44.0,
+        "altura": 78.0,
+        "profudidade": 36.0,
+        "obs": "n"
     }
 ]
