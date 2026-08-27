@@ -25,3 +25,13 @@ def ler_numero(texto, minimo=0):
             continue
 
         return valor
+
+def ler_texto(texto)
+    while True:
+     texto = sti(input(texto)
+     if texto 
+      return texto
+     else:
+     print("texto inválido")
+     
+     
