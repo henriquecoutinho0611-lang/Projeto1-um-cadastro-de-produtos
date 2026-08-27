@@ -31,7 +31,7 @@ def Novo_produto (produtos):
         "nome": nome,
         "largura": largura,
         "altura": altura,
-        "profudidade": profundidade,
+        "profundidade": profundidade,
         "obs": obs,
     }
 
