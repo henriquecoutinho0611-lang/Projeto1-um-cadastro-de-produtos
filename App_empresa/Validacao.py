@@ -33,6 +33,6 @@ def ler_texto(texto)
       return resposta
      else:
      print("Nome inválido")
-     continue
+      continue
      
      
