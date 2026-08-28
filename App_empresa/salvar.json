@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "nome": "CISTALEIRA",
+        "nome": "tudo",
         "largura": 30.0,
         "altura": 756.0,
-        "profudidade": 34.0,
+        "profundidade": 34.0,
         "obs": "N"
     },
     {
@@ -12,7 +12,7 @@
         "nome": "cistaleira",
         "largura": 25.0,
         "altura": 55.0,
-        "profudidade": 55.0,
+        "profundidade": 55.0,
         "obs": "n"
     },
     {
@@ -20,7 +20,7 @@
         "nome": "cistaleira 2",
         "largura": 33.0,
         "altura": 39.0,
-        "profudidade": 44.0,
+        "profundidade": 44.0,
         "obs": "n"
     },
     {
@@ -28,7 +28,39 @@
         "nome": "cista",
         "largura": 44.0,
         "altura": 78.0,
-        "profudidade": 36.0,
+        "profundidade": 36.0,
         "obs": "n"
+    },
+    {
+        "id": 5,
+        "nome": "cadeira",
+        "largura": 400,
+        "altura": 700,
+        "profundidade": 89,
+        "obs": ""
+    },
+    {
+        "id": 6,
+        "nome": "cistaleira",
+        "largura": 35,
+        "altura": 545,
+        "profundidade": 435,
+        "obs": "n"
+    },
+    {
+        "id": 7,
+        "nome": "cadeira",
+        "largura": 40,
+        "altura": 700,
+        "profundidade": 400,
+        "obs": null
+    },
+    {
+        "id": 8,
+        "nome": "cadeira 2",
+        "largura": 400,
+        "altura": 600,
+        "profundidade": 400,
+        "obs": "a cadeira tem inscosto de 500mm"
     }
 ]

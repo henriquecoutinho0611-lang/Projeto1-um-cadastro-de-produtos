@@ -1,4 +1,4 @@
-from Validacao import ler_numero, ler_texto
+from Validacao import validar_int, validar_str
 
 
 
@@ -11,19 +11,19 @@ def gerar_id(produtos):
 def Novo_produto (produtos):
     id_produto = gerar_id(produtos)
 
-    nome = ler_texto("Qual o nome da peca?\n")
+    nome = validar_str("Qual é o nome da peça?\n")
     print("-" * 30)
 
-    largura = ler_numero("Informe a largura em mm: ")
+    largura = validar_int("Informe a largura em mm: ")
     print("-" * 30)
 
-    altura = ler_numero("Informe a altura em mm: ")
+    altura = validar_int("Informe a altura em mm: ")
     print("-" * 30)
 
-    profundidade = ler_numero("Informe a profundidade em mm: ")
+    profundidade = validar_int("Informe a profundidade em mm: ")
     print("-" * 30)
 
-    obs = input("Existe alguma observacao?\n")
+    obs = input("Existe alguma observação?\n")
     print("-" * 30)
 
     dados = {
@@ -32,7 +32,7 @@ def Novo_produto (produtos):
         "largura": largura,
         "altura": altura,
         "profundidade": profundidade,
-        "obs": obs,
+        "obs": obs if obs else None,
     }
 
     produtos.append(dados)

@@ -1,7 +1,8 @@
 from salvar_produtos import Novo_produto
 from arquivos import salvar_arquivos, ler_arquivo
-from Buscar_produtos import buscar_arquivo
-from Validacao import sim_nao
+from Buscar_produtos import buscar_arquivo, lista_produtos
+from Validacao import sim_nao, validar_int
+from editar import editar_produtos
 
 def cadasta_produto():
      while True:
@@ -10,7 +11,7 @@ def cadasta_produto():
             produtos = Novo_produto(produtos)
             salvar_arquivos(produtos)
 
-            if not sim_nao("deseja cadasta mais algum produto?  "):
+            if not sim_nao("Deseja cadastrar mais algum produto? "):
                break
 
 def buscar():
@@ -22,15 +23,16 @@ def buscar():
              print("-" * 30)
              print(f"ID: {produto['id']}")
              print(f"Nome: {produto['nome']}")
-             print(f"Largura: {produto['largura']}")
-             print(f"Altura: {produto['altura']}")
-             print(f"Profundidade: {produto['profudidade']}")
-             print(f"OBS: {produto['obs']}")
+             print(f"Largura: {produto['largura']}mm")
+             print(f"Altura: {produto['altura']}mm")
+             print(f"Profundidade: {produto['profundidade']}mm")
+             if produto['obs']:
+              print(f"OBS: {produto['obs']}")
              print("-" * 30)
        else:
-          print("Produto nao encontrado\n ")
+          print("Produto não encontrado\n ")
 
-       if not sim_nao("deseja busca mais algun produto? "):
+       if not sim_nao("Deseja buscar mais algum produto? "):
           break
 
                   
@@ -39,19 +41,24 @@ def buscar():
 def main():
     while True: 
      try:
-      condicao = int(input(" 1 para buscar\n 2 para salvar "))
+      condicao = validar_int("1 para buscar\n2 para cadastrar\n3 para listar todos os produtos\n4 para editar um produto\n")
      except ValueError:
-      print(" Digite apenas números")
+      print("Digite apenas números")
       continue
      if condicao == 1:
         buscar()
      elif condicao == 2:
        cadasta_produto()
+     elif condicao == 3:
+        lista_produtos()
+     elif condicao == 4:
+        editar_produtos()     
      else:
-        print(" Opção inválida ")
+        print("Opção inválida")
 
      print("-"*30)   
-     if not sim_nao(" Deseja continuar? "):
+     if not sim_nao("Deseja continuar? "):
+      print("Muito obrigado")
       break    
 
 if __name__ == "__main__": 

@@ -8,31 +8,31 @@ def sim_nao(texto):
      if resposta in ("s", "sim"):
         return True
 
-     print("Opcao invalida")
+     print("Opção inválida")
      
 
 
-def ler_numero(texto, minimo=0):
+def validar_int(texto, minimo=0):
     while True:
         try:
-            valor = float(input(texto))
+            valor = int(input(texto))
         except ValueError:
-            print("Digite apenas numeros")
+            print("Digite apenas números")
             continue
 
         if valor <= minimo:
-            print("Numero invalido")
+            print("Número inválido")
             continue
 
         return valor
 
-def ler_texto(texto):
+def validar_str(texto):
     while True:
-     resposta = input(texto)
+     resposta = input(texto).lower().strip()
      if resposta: 
       return resposta
      else:
-      print("Nome inválido")
-       continue
+      print("Inválido")
+     continue
      
      
