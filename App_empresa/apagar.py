@@ -3,12 +3,14 @@ from arquivos import ler_arquivo,salvar_arquivos
 from Validacao import sim_nao,validar_int
 
 
+# Busca um produto, deixa escolher um dos resultados e remove da lista salva.
 def apagar():
   while True: 
     encontados = buscar_arquivo()
     produtos = ler_arquivo()
 
     if  encontados:
+        # Mostra todos os produtos encontrados para o usuário escolher pelo número.
         for i, encontado in enumerate(encontados, start=1):
             print(f"{i} - {encontado['nome']}")
 

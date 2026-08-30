@@ -5,7 +5,7 @@ from salvar_produtos import cadasta_produto
 from apagar import apagar
                   
 
-
+# Mostra o menu principal e chama a função escolhida pelo usuário.
 def main():
     while True: 
      try:

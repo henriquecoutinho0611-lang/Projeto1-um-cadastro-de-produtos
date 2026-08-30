@@ -2,11 +2,13 @@ from Validacao import validar_str, validar_int, sim_nao
 from Buscar_produtos import buscar_arquivo
 from arquivos import salvar_arquivos, ler_arquivo
 
+# Busca um produto, deixa escolher um dos resultados e altera os campos desejados.
 def editar_produtos():
  while True:
   encontrados = buscar_arquivo()
   produtos = ler_arquivo()
   if  encontrados:
+      # Mostra todos os produtos encontrados para o usuário escolher pelo número.
       for i, produto in enumerate(encontrados, start=1):
        print(i,produto["nome"])
       try: 

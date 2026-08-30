@@ -1,6 +1,7 @@
 from arquivos import ler_arquivo
 from Validacao import sim_nao
 
+# Procura produtos pelo nome ou pelo ID e devolve uma lista com os encontrados.
 def buscar_arquivo():
     busca = input("Qual é o nome ou ID do produto?\n").lower().strip()
     resultado = []
@@ -11,6 +12,7 @@ def buscar_arquivo():
 
     return resultado
 
+# Mostra os produtos encontrados e pergunta se o usuário quer buscar novamente.
 def buscar():
 
       while True:
@@ -33,6 +35,7 @@ def buscar():
           break
 
 
+# Mostra todos os produtos salvos no arquivo JSON.
 def lista_produtos():
     for produto in ler_arquivo():
         print("-" * 30)

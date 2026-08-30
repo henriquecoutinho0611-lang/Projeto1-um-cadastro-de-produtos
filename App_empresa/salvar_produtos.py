@@ -2,12 +2,14 @@ from Validacao import validar_int, validar_str,sim_nao
 from arquivos import ler_arquivo, salvar_arquivos
 
 
+# Cria o próximo ID usando o último produto cadastrado.
 def gerar_id(produtos):
     if produtos:
         return produtos[-1]["id"] + 1
     return 1
 
 
+# Recebe os dados digitados pelo usuário e adiciona um novo produto na lista.
 def Novo_produto (produtos):
     id_produto = gerar_id(produtos)
 
@@ -40,6 +42,7 @@ def Novo_produto (produtos):
     return produtos
 
 
+# Controla o cadastro de vários produtos e salva tudo no arquivo JSON.
 def cadasta_produto():
      while True:
             

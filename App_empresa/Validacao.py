@@ -1,4 +1,5 @@
 
+# Faz uma pergunta de sim ou não e devolve True para sim e False para não.
 def sim_nao(texto):
     while True:
      resposta = input(texto).lower().strip().split()
@@ -12,6 +13,7 @@ def sim_nao(texto):
      
 
 
+# Lê um número inteiro digitado pelo usuário e valida se ele é maior que o mínimo.
 def validar_int(texto, minimo=0):
     while True:
         try:
@@ -26,6 +28,7 @@ def validar_int(texto, minimo=0):
 
         return valor
 
+# Lê um texto digitado pelo usuário e não deixa voltar vazio.
 def validar_str(texto):
     while True:
      resposta = input(texto).lower().strip()
