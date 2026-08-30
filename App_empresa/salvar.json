@@ -1,35 +1,19 @@
 [
     {
-        "id": 1,
-        "nome": "tudo",
-        "largura": 30.0,
-        "altura": 756.0,
-        "profundidade": 34.0,
-        "obs": "N"
-    },
-    {
-        "id": 2,
-        "nome": "cistaleira",
-        "largura": 25.0,
-        "altura": 55.0,
-        "profundidade": 55.0,
-        "obs": "n"
-    },
-    {
         "id": 3,
         "nome": "cistaleira 2",
-        "largura": 33.0,
-        "altura": 39.0,
-        "profundidade": 44.0,
-        "obs": "n"
+        "largura": 33,
+        "altura": 39,
+        "profundidade": 44,
+        "obs": null
     },
     {
         "id": 4,
         "nome": "cista",
-        "largura": 44.0,
-        "altura": 78.0,
-        "profundidade": 36.0,
-        "obs": "n"
+        "largura": 44,
+        "altura": 78,
+        "profundidade": 36,
+        "obs": null
     },
     {
         "id": 5,
@@ -37,15 +21,15 @@
         "largura": 400,
         "altura": 700,
         "profundidade": 89,
-        "obs": ""
+        "obs": null
     },
     {
         "id": 6,
-        "nome": "cistaleira",
+        "nome": "messa",
         "largura": 35,
         "altura": 545,
         "profundidade": 435,
-        "obs": "n"
+        "obs": null
     },
     {
         "id": 7,

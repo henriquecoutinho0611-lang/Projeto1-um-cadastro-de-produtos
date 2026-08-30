@@ -1,7 +1,7 @@
 
 def sim_nao(texto):
     while True:
-     resposta = input(texto).lower().strip()
+     resposta = input(texto).lower().strip().split()
 
      if resposta in ("n", "nao"):
          return False

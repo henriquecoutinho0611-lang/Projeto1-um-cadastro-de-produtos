@@ -1,5 +1,5 @@
-from Validacao import validar_int, validar_str
-
+from Validacao import validar_int, validar_str,sim_nao
+from arquivos import ler_arquivo, salvar_arquivos
 
 
 def gerar_id(produtos):
@@ -40,3 +40,12 @@ def Novo_produto (produtos):
     return produtos
 
 
+def cadasta_produto():
+     while True:
+            
+            produtos = ler_arquivo()
+            produtos = Novo_produto(produtos)
+            salvar_arquivos(produtos)
+
+            if not sim_nao("Deseja cadastrar mais algum produto? "):
+               break
