@@ -1,19 +1,22 @@
 
-# Faz uma pergunta de sim ou não e devolve True para sim e False para não.
+# Faz uma pergunta de sim ou não.
+# Retorna True quando o usuário digita "s" ou "sim".
+# Retorna False quando o usuário digita "n" ou "nao".
 def sim_nao(texto):
     while True:
-     resposta = input(texto).lower().strip().split()
+        resposta = input(texto).lower().strip()
 
-     if resposta in ("n", "nao"):
-         return False
-     if resposta in ("s", "sim"):
-        return True
+        if resposta in ("n", "nao"):
+            return False
 
-     print("Opção inválida")
-     
+        if resposta in ("s", "sim"):
+            return True
+
+        print("Opção inválida")
 
 
-# Lê um número inteiro digitado pelo usuário e valida se ele é maior que o mínimo.
+# Pede um número inteiro para o usuário.
+# Continua perguntando até receber um número maior que o valor mínimo.
 def validar_int(texto, minimo=0):
     while True:
         try:
@@ -28,14 +31,14 @@ def validar_int(texto, minimo=0):
 
         return valor
 
-# Lê um texto digitado pelo usuário e não deixa voltar vazio.
+
+# Pede um texto para o usuário.
+# Continua perguntando se o usuário deixar a resposta vazia.
 def validar_str(texto):
     while True:
-     resposta = input(texto).lower().strip()
-     if resposta: 
-      return resposta
-     else:
-      print("Inválido")
-     continue
-     
-     
+        resposta = input(texto).strip()
+
+        if resposta:
+            return resposta
+
+        print("Inválido")
